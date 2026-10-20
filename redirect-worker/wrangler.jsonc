@@ -1,0 +1,9 @@
+{
+	"name": "cambridge-site-redirect",
+	"main": "src/index.js",
+	"compatibility_date": "2026-10-01",
+	"workers_dev": false,
+	"routes": [
+		{ "pattern": "mohsin.se/cambridge-site*", "zone_name": "mohsin.se" }
+	]
+}

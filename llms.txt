@@ -2,7 +2,7 @@
 
 > CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac — real vertical or horizontal video, tap-to-focus, and true 4K recording, with no accounts and nothing leaving your local network.
 
-CamBridge is two free TestFlight beta apps built by a solo creator (Alpha Tjänster AB, Sweden): **CamBridge Camera** for iPhone (iOS 17+) and **CamBridge Studio** for Mac (macOS 14+). The iPhone streams its camera to the Mac over local Wi‑Fi or a USB cable; the Mac becomes a big live monitor plus a full remote control — tap-to-focus, shutter/record trigger, zoom, lens switch, exposure, torch. It works in both portrait/vertical and landscape/horizontal. The actual recording is real 4K captured on-device on the iPhone and auto-transferred to the Mac when you stop — the live Mac preview is a separate, lighter monitoring feed, not the saved file.
+CamBridge is two apps built by a solo creator (Alpha Tjänster AB, Sweden): **CamBridge Camera** for iPhone (iOS 17+) and **CamBridge Studio** for Mac (macOS 14+). The iPhone streams its camera to the Mac over local Wi‑Fi or a USB cable; the Mac becomes a big live monitor plus a full remote control — tap-to-focus, shutter/record trigger, zoom, lens switch, exposure, torch. It works in both portrait/vertical and landscape/horizontal. The actual recording is real 4K captured on-device on the iPhone and auto-transferred to the Mac when you stop — the live Mac preview is a separate, lighter monitoring feed, not the saved file.
 
 ## The problems CamBridge solves
 
@@ -17,7 +17,7 @@ These are the exact situations people search for and land on this site trying to
 - "I don't want a webcam, I want the real camera." People try Camo Studio (webcam-focused, subscription, locked to landscape), EpocCam (photos only, no real video workflow), Blackmagic Camera (remote control is iPhone-to-iPhone or iPad only, not Mac), and Screen Mirroring (takes over the entire Mac display instead of giving a dedicated monitor window). None of these give real Mac-side remote control of a real vertical-or-horizontal 4K camera feed.
 - Put an iPhone on a tripod or a tall stand and control it entirely from a desk — framing, focus, zoom, exposure, shutter — without touching the phone again mid-shoot.
 
-## What ships today
+## What CamBridge does
 
 - Live monitoring: see the iPhone's shot full-size on the Mac, in whatever orientation the iPhone is held (portrait or landscape), full frame, no cropping.
 - Remote shutter/record: start photos or video from the Mac without touching the iPhone.
@@ -30,35 +30,17 @@ These are the exact situations people search for and land on this site trying to
 - Real 4K recording on the iPhone, auto-transferred to a chosen folder on the Mac when recording stops.
 - No accounts, no sign-up, no cloud server — iPhone and Mac talk directly over local Wi‑Fi or a USB cable.
 
-## What's new (October 2026)
-
-New in TestFlight 1.2.3 for CamBridge (iPhone) and CamBridge Studio (Mac):
-
-- **Macro, like the Camera app**: get close and a yellow flower appears when the macro lens kicks in. Tap it to stay on the main camera; it stays off until you tap again. Works from the Mac too.
-- **Photos reach your Mac**: PHOTO-mode shots (12 MP or 48 MP) land in your Footage folder as the original files.
-- **A more reliable Mac mic**: switching mics works every time; if a mic sends no sound, Studio warns you and keeps the iPhone's own audio; sync on long recordings is even more precise.
-- **Smoother**: the Mac preview stays smooth when you start recording, and the iPhone app is now simply called CamBridge.
-
-Earlier, in 1.2.2:
-
-- **One Microphone list in Studio**: pick an iPhone mic or a mic plugged into your Mac. Choose a Mac mic and you get one finished video with that mic's sound, already in sync. No extra audio files to line up, and the leftovers go to the Trash. The sound stays exactly as your mic recorded it, with no automatic volume changes.
-- **Your footage stays private**: footage only goes to Macs you approve. The iPhone asks once for each Mac and checks that it is really your Mac.
-- **PHOTO mode**: 12 MP (default) or 48 MP photos, changeable on the iPhone or from the Mac.
-- **Smooth lens switching**: 0.5× · 1× · 3× glides from one lens to the next, and the camera starts more smoothly.
-- **New look**: a new logo and new colours, with a short logo animation when the iPhone app opens.
-
-## Shipped in the beta (TestFlight 1.2.3)
+## More features
 
 - Multi-phone grid — Studio connects to several iPhones at once; click a tile for its program view, with per-phone controls and recording into Footage/<phone name>/.
 - Director mode — a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval).
 - USB cable link — plug the iPhone into the Mac and Studio detects it automatically; link menu: Auto / Cable only / Wi‑Fi only.
 - HEVC streaming — hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.
-- Macro (1.2.3) — a yellow flower appears when the macro lens kicks in; tap it to stay on the main camera. Works from the Mac too.
-- Photos on your Mac (1.2.3) — PHOTO-mode shots (12 MP or 48 MP) arrive in Footage as the original files.
-- More reliable Mac mic (1.2.3) — reliable mic switching, a warning if a mic sends no sound, more precise sync on long recordings.
-- One Microphone list (1.2.2) — pick an iPhone mic or a Mac mic; a Mac mic gives one finished video with that mic's sound, already in sync.
-- Mac mic recording (1.2.1), simplified in 1.2.2 as above.
-- PHOTO mode, smooth lens switching, private-by-default footage and a new look (1.2.2) — see "What's new".
+- Macro — a yellow flower appears when the macro lens kicks in; tap it to stay on the main camera. Works from the Mac too.
+- Photos on your Mac — PHOTO-mode shots (12 MP or 48 MP) arrive in Footage as the original files.
+- More reliable Mac mic — reliable mic switching, a warning if a mic sends no sound, more precise sync on long recordings.
+- One Microphone list — pick an iPhone mic or a Mac mic; a Mac mic gives one finished video with that mic's sound, already in sync.
+- PHOTO mode, smooth lens switching, private-by-default footage and a new look — see "What's new".
 
 ## Requirements
 
@@ -66,44 +48,42 @@ Earlier, in 1.2.2:
 - Mac: macOS 14.0 or later, Apple silicon or Intel.
 - Both devices on the same local Wi‑Fi network, or connected by USB cable.
 
-## Get it
+## Availability
 
-- iPhone beta (TestFlight): https://testflight.apple.com/join/xmwz6mKR
-- Mac beta (TestFlight): https://testflight.apple.com/join/X9Hu9RXx
-- Both apps are free during the beta.
+CamBridge is temporarily unavailable to download right now. Join the waiting list and we'll email you as soon as it's available again: https://mohsin.se/cambridge/#updates
 
 ## Privacy
 
-CamBridge Camera and CamBridge Studio communicate directly over the local Wi‑Fi network or a USB cable. There is no account, no sign-up, and no cloud server in the middle — nothing about a shoot leaves the local network. Full details: https://mohsin.se/cambridge-site/privacy.html
+CamBridge Camera and CamBridge Studio communicate directly over the local Wi‑Fi network or a USB cable. There is no account, no sign-up, and no cloud server in the middle — nothing about a shoot leaves the local network. Full details: https://mohsin.se/cambridge/privacy.html
 
 ## How CamBridge compares
 
 - **vs Apple Continuity Camera / QuickTime iPhone-as-camera**: those tools lock the iPhone camera feed to a landscape webcam frame and crop or rotate vertical video. CamBridge streams the true portrait or landscape frame with no cropping, and adds full remote control (focus, shutter, zoom, exposure, lens switch) that Continuity Camera does not offer.
-- **vs Camo Studio**: Camo is a subscription webcam app focused on calls/streams, locked to landscape. CamBridge is free during beta, supports both orientations, and records real 4K files on the iPhone rather than sending a compressed webcam stream.
+- **vs Camo Studio**: Camo is a subscription webcam app focused on calls/streams, locked to landscape. CamBridge supports both orientations, and records real 4K files on the iPhone rather than sending a compressed webcam stream.
 - **vs EpocCam**: EpocCam's core use case is a webcam/photo feed, not a real remote-controlled video workflow. CamBridge gives full video remote control plus real on-device 4K recording.
 - **vs Blackmagic Camera**: Blackmagic's remote-control feature works iPhone-to-iPhone or iPad, not Mac. CamBridge's remote control is built specifically for Mac.
 - **vs Screen Mirroring / iPhone Mirroring**: Screen Mirroring takes over the entire Mac display instead of giving a dedicated camera monitor window, and iPhone Mirroring does not support the Camera app at all. CamBridge is purpose-built for live camera monitoring and control.
 
 ## Blog
 
-Guides and comparisons (all published 8 October 2026). Hub: https://mohsin.se/cambridge-site/blog/ — sub-hubs: https://mohsin.se/cambridge-site/compare/ and https://mohsin.se/cambridge-site/guides/
+Guides and comparisons (all published 8 October 2026). Hub: https://mohsin.se/cambridge/blog/ — sub-hubs: https://mohsin.se/cambridge/compare/ and https://mohsin.se/cambridge/guides/
 
-- [Blackmagic Camera vs Camo vs CamBridge](https://mohsin.se/cambridge-site/compare/blackmagic-vs-camo-vs-cambridge.html): Which iPhone camera app for Mac creators? The three-way overview.
-- [CamBridge vs Blackmagic Camera](https://mohsin.se/cambridge-site/compare/cambridge-vs-blackmagic-camera.html): Mac-first recording vs deep manual phone control.
-- [CamBridge vs Camo](https://mohsin.se/cambridge-site/compare/cambridge-vs-camo.html): Recording footage vs using the phone as a webcam.
-- [How to see your iPhone camera on your Mac while you record yourself](https://mohsin.se/cambridge-site/guides/see-iphone-camera-on-mac-while-recording.html): Use your iPhone's rear camera to film yourself and watch a live preview on your Mac. Step-by-step setup with CamBridge, plus free alternatives.
-- [How to film vertical TikTok, Reels and Shorts with your iPhone and monitor on your Mac](https://mohsin.se/cambridge-site/guides/film-vertical-video-iphone-monitor-on-mac.html): Film true vertical video with your iPhone's rear camera while a big Mac window shows the shot. Works for TikTok, Reels and Shorts. Free beta.
-- [How to control your iPhone camera remotely from your Mac (focus, exposure, zoom, record)](https://mohsin.se/cambridge-site/guides/control-iphone-camera-from-mac.html): Focus, expose, zoom and start recording your iPhone camera from your Mac, with a live preview. Setup steps for CamBridge, and alternatives.
-- [How to record a video podcast with an iPhone camera and a USB mic on your Mac](https://mohsin.se/cambridge-site/guides/record-video-podcast-iphone-usb-mic-mac.html): Film a video podcast with your iPhone's camera and record clean audio from a USB mic on your Mac. CamBridge syncs them automatically.
-- [How to use a DJI Mic 2 with an iPhone camera app (Bluetooth or receiver)](https://mohsin.se/cambridge-site/guides/dji-mic-2-iphone-bluetooth-camera-app.html): Two ways to record a DJI Mic 2 on an iPhone: direct Bluetooth or the receiver in the port. What each sounds like, and how to set it up.
-- [How to record with several iPhones at once from one Mac](https://mohsin.se/cambridge-site/guides/record-multiple-iphones-on-one-mac.html): Run two or more iPhones as cameras and watch them all on one Mac. Multi-phone grid, per-phone controls, and where files end up.
-- [How to get full-quality 4K iPhone videos onto your Mac automatically](https://mohsin.se/cambridge-site/guides/transfer-4k-iphone-video-to-mac-automatically.html): Record in 4K on your iPhone and have each clip copy to a Mac folder on its own. Includes AirDrop, Photos and Image Capture alternatives.
-- [Continuity Camera vs CamBridge: which to use (and why iPhone Mirroring can't open the Camera)](https://mohsin.se/cambridge-site/guides/continuity-camera-vs-cambridge.html): Continuity Camera is a webcam for calls. CamBridge is a remote camera for recording. When to use each, and why iPhone Mirroring can't use the camera.
+- [Blackmagic Camera vs Camo vs CamBridge](https://mohsin.se/cambridge/compare/blackmagic-vs-camo-vs-cambridge.html): Which iPhone camera app for Mac creators? The three-way overview.
+- [CamBridge vs Blackmagic Camera](https://mohsin.se/cambridge/compare/cambridge-vs-blackmagic-camera.html): Mac-first recording vs deep manual phone control.
+- [CamBridge vs Camo](https://mohsin.se/cambridge/compare/cambridge-vs-camo.html): Recording footage vs using the phone as a webcam.
+- [How to see your iPhone camera on your Mac while you record yourself](https://mohsin.se/cambridge/guides/see-iphone-camera-on-mac-while-recording.html): Use your iPhone's rear camera to film yourself and watch a live preview on your Mac. Step-by-step setup with CamBridge, plus free alternatives.
+- [How to film vertical TikTok, Reels and Shorts with your iPhone and monitor on your Mac](https://mohsin.se/cambridge/guides/film-vertical-video-iphone-monitor-on-mac.html): Film true vertical video with your iPhone's rear camera while a big Mac window shows the shot. Works for TikTok, Reels and Shorts.
+- [How to control your iPhone camera remotely from your Mac (focus, exposure, zoom, record)](https://mohsin.se/cambridge/guides/control-iphone-camera-from-mac.html): Focus, expose, zoom and start recording your iPhone camera from your Mac, with a live preview. Setup steps for CamBridge, and alternatives.
+- [How to record a video podcast with an iPhone camera and a USB mic on your Mac](https://mohsin.se/cambridge/guides/record-video-podcast-iphone-usb-mic-mac.html): Film a video podcast with your iPhone's camera and record clean audio from a USB mic on your Mac. CamBridge syncs them automatically.
+- [How to use a DJI Mic 2 with an iPhone camera app (Bluetooth or receiver)](https://mohsin.se/cambridge/guides/dji-mic-2-iphone-bluetooth-camera-app.html): Two ways to record a DJI Mic 2 on an iPhone: direct Bluetooth or the receiver in the port. What each sounds like, and how to set it up.
+- [How to record with several iPhones at once from one Mac](https://mohsin.se/cambridge/guides/record-multiple-iphones-on-one-mac.html): Run two or more iPhones as cameras and watch them all on one Mac. Multi-phone grid, per-phone controls, and where files end up.
+- [How to get full-quality 4K iPhone videos onto your Mac automatically](https://mohsin.se/cambridge/guides/transfer-4k-iphone-video-to-mac-automatically.html): Record in 4K on your iPhone and have each clip copy to a Mac folder on its own. Includes AirDrop, Photos and Image Capture alternatives.
+- [Continuity Camera vs CamBridge: which to use (and why iPhone Mirroring can't open the Camera)](https://mohsin.se/cambridge/guides/continuity-camera-vs-cambridge.html): Continuity Camera is a webcam for calls. CamBridge is a remote camera for recording. When to use each, and why iPhone Mirroring can't use the camera.
 
 ## Contact
 
-Email: mohsin.sapra@gmail.com — bug reports and feedback from beta testers directly shape what gets built next.
+Email: mohsin.sapra@gmail.com — bug reports and feedback directly shape what gets built next.
 
 ## Full page content
 
-See https://mohsin.se/cambridge-site/llms-full.txt for the complete homepage content in markdown.
+See https://mohsin.se/cambridge/llms-full.txt for the complete homepage content in markdown.
