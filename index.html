@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F6F8FC" media="(prefers-color-scheme: light)">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="stylesheet" href="css/style.css?v=12">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -58,26 +58,26 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Does it cost anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What devices does this need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel)."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Do I need Wi‑Fi, or can I use a cable?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Either. CamBridge works over the same Wi‑Fi network or over a USB cable. Plug the iPhone into the Mac and Studio detects the cable automatically, and the link menu lets you choose Auto, Cable only or Wi‑Fi only. Recording is always the real 4K file on the iPhone, so the link only carries the live monitor."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this a finished app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No — CamBridge is currently a TestFlight beta distributed through Apple's TestFlight program. That means Apple has reviewed the build, but it's still in active development, things can change, and you're trying it before general release. Join via the buttons on this page."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What quality actually gets recorded?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The real recording is full-quality 4K captured on the iPhone itself, and it's auto-transferred to your Mac when you stop. The live preview you see on your Mac while shooting is a separate, lighter monitoring feed — not the file that gets saved. Don't judge final quality by the live preview."
       }
     },
     {
@@ -94,62 +94,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. See our privacy page for details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What devices does this need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does it cost anything?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use more than one iPhone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. CamBridge Studio can connect to several iPhones at once and show them in a grid. Click a tile to open its program view, with per-phone controls and recording. Recordings land in Footage/ in a folder named after each phone. A second iPhone running CamBridge Camera can also act as the director's monitor and remote: it discovers cameras on the network or connects by IP, and the camera phone can require approval."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I report a bug or give feedback?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Email mohsin.sapra@gmail.com — real feedback from beta testers directly shapes what gets built next."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I use my Mac to remotely take photos with my iPhone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories required, and a cable is optional."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Apple's Continuity Camera and QuickTime's iPhone camera source are built around a landscape webcam feed — since macOS Sonoma, they auto-rotate, stabilize, and crop vertical footage into 16:9 horizontal. CamBridge is a different kind of app: it's a dedicated Mac monitor and remote control for the iPhone camera, so it streams and shows the true portrait frame with no rotation or cropping."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is CamBridge a webcam app like Camo or EpocCam?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Camo and EpocCam turn your iPhone into a webcam feed for calls and streams. CamBridge is a remote camera and monitor system — the recording you get is the real 4K camera file saved on the iPhone itself, then auto-transferred to your Mac, not a lower-quality webcam stream."
       }
     }
   ]
@@ -238,7 +182,6 @@
     <span class="status-dot" aria-hidden="true"></span>
     <div class="status-text">
       <p>We're having some issues with our iOS app right now. <a href="#updates">Sign up for our waiting list below</a> and we'll notify you as soon as everything is back.</p>
-      <p lang="sv">Vi har just nu problem med vår iOS-app. <a href="#updates">Skriv upp dig på vår väntelista längre ner</a> så meddelar vi dig så snart allt fungerar igen.</p>
     </div>
   </div>
 </div>
@@ -262,7 +205,7 @@
       <span class="sr-only">Menu</span>
     </button>
     <nav class="primary-nav" id="primaryNav" aria-label="Primary">
-      <a href="#features">Features</a>
+      <a href="#why">Why CamBridge</a>
       <a href="#how-it-works">How it works</a>
       <a href="blog/">Blog</a>
       <a href="#faq">FAQ</a>
@@ -374,27 +317,38 @@
     </div>
   </section>
 
-  <!-- AUDIENCE -->
-  <section class="section audience" aria-labelledby="aud-title">
+  <!-- PROBLEM / SOLUTION -->
+  <section class="section problems" id="why" aria-labelledby="why-title">
     <div class="wrap">
-      <div class="section-head">
-        <h2 id="aud-title">Built for creators who ship daily.</h2>
-        <p class="lead">No fake numbers, no logos we haven't earned yet. Just who this is for and what it's meant to make easier.</p>
+      <div class="section-head section-head--center">
+        <h2 id="why-title">The problem, and how CamBridge solves it.</h2>
       </div>
-      <div class="aud-grid">
-        <article>
-          <h3>Daily uploaders</h3>
-          <p>Talking-head videos, vlogs, and shorts don't leave room for a two-hour rig setup. CamBridge is on in under a minute, every time.</p>
-        </article>
-        <article>
-          <h3>Podcasters on camera</h3>
-          <p>Frame yourself properly, see it big on your Mac while you record, and stop squinting at a phone propped up across the room.</p>
-        </article>
-        <article>
-          <h3>Course &amp; tutorial makers</h3>
-          <p>Refocus mid-explanation without breaking your flow. Tap the shot on your Mac instead of walking over to the phone.</p>
-        </article>
-      </div>
+      <ul class="ps-grid">
+        <li class="ps-card">
+          <p class="ps-problem">Can't see yourself when filming with the iPhone's best (back) camera.</p>
+          <p class="ps-solution">See the live shot big on your Mac.</p>
+        </li>
+        <li class="ps-card">
+          <p class="ps-problem">Can't reach the phone to adjust it mid-take.</p>
+          <p class="ps-solution">Control focus, exposure, zoom and recording from your Mac.</p>
+        </li>
+        <li class="ps-card">
+          <p class="ps-problem">Continuity Camera and QuickTime force vertical video into landscape.</p>
+          <p class="ps-solution">Shoot true vertical or horizontal.</p>
+        </li>
+        <li class="ps-card">
+          <p class="ps-problem">Getting footage off the phone is slow.</p>
+          <p class="ps-solution">Full-quality 4K lands in a folder on your Mac automatically.</p>
+        </li>
+        <li class="ps-card">
+          <p class="ps-problem">Good audio is a hassle.</p>
+          <p class="ps-solution">Use any mic: iPhone, Bluetooth (like DJI), USB, or your Mac's mic.</p>
+        </li>
+        <li class="ps-card">
+          <p class="ps-problem">Setup and privacy worries.</p>
+          <p class="ps-solution">No account. Wi&#8209;Fi or a cable. Nothing leaves your room.</p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -424,471 +378,6 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="section features" id="features" aria-labelledby="feat-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2 id="feat-title">Everything you need to shoot alone, well.</h2>
-        <p class="lead">Once you're connected, your Mac becomes the control room. Your iPhone stays put on its tripod while you drive the shot from your desk.</p>
-      </div>
-
-      <!-- 1. Remote control -->
-      <article class="show">
-        <div class="show-copy">
-          <h3>Your iPhone is a pro camera. Your Mac is the remote.</h3>
-          <p>Click anywhere in the Mac preview to pull focus, or press and hold to lock focus and exposure like the native Camera app. Swipe to brighten or darken, switch lenses and zoom mid-take, all without leaving your chair.</p>
-          <ul class="ticks">
-            <li>Tap to focus, press and hold to lock AE/AF</li>
-            <li>Exposure compensation, reflected live on your Mac</li>
-            <li>Lens switch 0.5× · 1× · 3× and smooth zoom from trackpad or slider</li>
-            <li>Torch for fill light, and a remote shutter</li>
-          </ul>
-        </div>
-        <div class="vis"><div class="vig vig--control" role="img" aria-label="Viewfinder showing a yellow square focus reticle with an exposure slider, an AE/AF LOCK label and a 0.5×, 1×, 3× lens switch.">
-          <svg class="fill"><use href="#scene-bg-w"/></svg>
-          <svg class="fill"><use href="#scene-subj-w"/></svg>
-          <span class="grid3"></span>
-          <span class="ret ret--big"><span class="ret-sun"><svg><use href="#i-sun"/></svg></span></span>
-          <span class="lockpill">AE/AF LOCK</span>
-          <span class="lens lens--big"><b>0.5×</b><b class="on">1×</b><b>3×</b></span>
-        </div></div>
-      </article>
-
-      <!-- 2. Footage lands -->
-      <article class="show show--flip">
-        <div class="show-copy">
-          <h3>Full-quality 4K lands on your Mac by itself.</h3>
-          <p>The real recording is captured on the iPhone, not screen-grabbed from a preview. Hit stop and it moves itself into your chosen folder on the Mac, ready to edit. Photos too, including ones you trigger from the Mac.</p>
-          <ul class="ticks">
-            <li>4K recorded on-device, never dependent on Wi‑Fi quality</li>
-            <li>Auto-transfer into your Footage folder when you stop</li>
-            <li>The live Mac preview is a lighter monitoring feed, not the saved file</li>
-          </ul>
-        </div>
-        <div class="vis"><div class="vig vig--saved" role="img" aria-label="A Footage folder on the Mac receiving a new 4K video and photos, with a toast reading Saved to Footage.">
-          <span class="toast"><svg><use href="#i-mac"/></svg>Saved to Footage/CamBridge 14.32.08.mov</span>
-          <div class="finder">
-            <div class="finder-bar"><span class="dots"><i></i><i></i><i></i></span><span>Footage</span></div>
-            <ul class="finder-list">
-              <li class="row row--new"><span class="thumb"></span><span class="fname">CamBridge 14.32.08.mov</span><span class="fmeta">4K</span></li>
-              <li class="row"><span class="thumb thumb--b"></span><span class="fname">CamBridge 14.18.41.mov</span><span class="fmeta">4K</span></li>
-              <li class="row"><span class="thumb thumb--c"></span><span class="fname">CamBridge 14.09.12.jpg</span><span class="fmeta">Photo</span></li>
-              <li class="row"><span class="thumb thumb--d"></span><span class="fname">CamBridge 13.55.30.mov</span><span class="fmeta">4K</span></li>
-              <li class="row"><span class="thumb thumb--b"></span><span class="fname">CamBridge 13.41.02.jpg</span><span class="fmeta">Photo</span></li>
-            </ul>
-          </div>
-          <svg class="finder-arc" viewBox="0 0 100 40" aria-hidden="true" preserveAspectRatio="none"><path class="arc-base" d="M4 34 Q 40 -6 96 22"/><path class="arc-flow" pathLength="100" d="M4 34 Q 40 -6 96 22"/></svg>
-          <span class="mini-phone" aria-hidden="true"><svg><use href="#i-phone"/></svg></span>
-        </div></div>
-      </article>
-
-      <!-- 3. Mic -->
-      <article class="show">
-        <div class="show-copy">
-          <h3>Bring your own mic.</h3>
-          <p>Pick any mic your iPhone can see, including the DJI Mic directly over Bluetooth with no receiver needed, or through its receiver for full quality. USB, wired, and Bluetooth headsets work too. Switch from your phone or your Mac, with a live level meter.</p>
-          <ul class="ticks">
-            <li>DJI Mic over Bluetooth, or via its receiver for the best audio</li>
-            <li>USB and wired mics, Bluetooth headsets</li>
-            <li>Live level meter on both devices</li>
-          </ul>
-        </div>
-        <div class="vis"><div class="vig vig--mic" role="img" aria-label="Microphone picker listing a DJI Mic over Bluetooth, a USB receiver and the iPhone mic, with a live level meter.">
-          <p class="mic-h">Microphone</p>
-          <ul class="mic-list">
-            <li class="on"><span class="mic-dot"></span>DJI Mic<small>Bluetooth</small></li>
-            <li><span class="mic-dot"></span>DJI Mic receiver<small>iPhone USB</small></li>
-            <li><span class="mic-dot"></span>USB microphone<small>Wired</small></li>
-            <li><span class="mic-dot"></span>iPhone microphone<small>Built in</small></li>
-          </ul>
-          <p class="mic-h mic-h--lvl">Input level</p>
-          <div class="meter" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          </div>
-        </div></div>
-      </article>
-
-      <!-- The rest -->
-      <h3 class="rest-title">And the rest of the control room</h3>
-      <div class="rest-grid">
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="8.3" r="1" class="fillc"/></svg>
-          <h4>See yourself big</h4>
-          <p>Your iPhone's shot appears full-size on your Mac, so you can see your framing while you record alone.</p>
-        </article>
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="14" height="11" rx="2"/><path d="M18 10.5 22 8v9l-4-2.5"/><circle cx="11" cy="12.5" r="3"/></svg>
-          <h4>Start and stop from your desk</h4>
-          <p>Trigger a photo or start recording on the iPhone without walking over and touching it.</p>
-        </article>
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><rect x="2.5" y="8" width="7.5" height="8" rx="1.6"/></svg>
-          <h4>Vertical or horizontal</h4>
-          <p>Turn your iPhone and the Studio feed follows instantly, full frame. Reels one take, YouTube the next.</p>
-        </article>
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 8 12h3l-1 10 6-12h-3l1-8z"/></svg>
-          <h4>Fill light on demand</h4>
-          <p>Toggle the iPhone's torch for a bit of fill without breaking your shot to reach for the phone.</p>
-        </article>
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M9 4.5v15M15 4.5v15M2.5 9.5h19M2.5 14.5h19"/></svg>
-          <h4>Clean full screen</h4>
-          <p>Controls float over the preview on the Mac. Full screen adds a grid and a level, and exits cleanly with Esc.</p>
-        </article>
-        <article class="mini">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-          <h4>No accounts, nothing in the cloud</h4>
-          <p>Your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. There is no server in the middle.</p>
-        </article>
-      </div>
-
-      <p class="today-note"><span class="tag">Today</span> Everything above is live in the beta right now, including real 4K files auto-transferred to your Mac. See what's next below.</p>
-    </div>
-  </section>
-
-  <!-- WHAT'S NEW -->
-  <section class="section whats-new" id="whats-new" aria-labelledby="whats-new-title">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="kicker">What's new &nbsp;·&nbsp; October 2026</p>
-        <h2 id="whats-new-title">Macro close-ups, photos on your Mac, a steadier Mac mic, and a smoother preview.</h2>
-        <p class="lead">New in TestFlight 1.2.3 for CamBridge on iPhone and CamBridge Studio on Mac. Here is what changed.</p>
-      </div>
-
-      <div class="new-grid new-grid--4">
-        <article class="new-card new-card--a">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.6"/><circle cx="12" cy="5.8" r="2.6"/><circle cx="12" cy="18.2" r="2.6"/><circle cx="5.8" cy="12" r="2.6"/><circle cx="18.2" cy="12" r="2.6"/></svg>
-          <h3>Macro, like the Camera app</h3>
-          <p>Get close to something small and a yellow flower appears when the macro lens kicks in. Tap it to stay on the main camera. It stays off until you tap it again. This works from the Mac too.</p>
-        </article>
-        <article class="new-card new-card--b">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4.5 3.5 3L15.5 12 20 16.5"/></svg>
-          <h3>Photos reach your Mac</h3>
-          <p>Shots you take in PHOTO mode, at 12 MP or 48 MP, land in your Footage folder on the Mac as the original files.</p>
-        </article>
-        <article class="new-card new-card--c">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"/></svg>
-          <h3>A more reliable Mac mic</h3>
-          <p>Switching mics now works every time. If a mic sends no sound, Studio warns you and keeps the iPhone's own audio, so you never end up with a silent video. Sync on long recordings is even more precise.</p>
-        </article>
-        <article class="new-card new-card--d">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M7 12h10M13.5 8.5 17 12l-3.5 3.5"/></svg>
-          <h3>Smoother, and a simpler name</h3>
-          <p>The Mac preview stays smooth when you start recording. The iPhone app is now simply called CamBridge.</p>
-        </article>
-      </div>
-
-      <h3 class="new-sub">Also in 1.2.2</h3>
-      <div class="new-grid">
-        <article class="new-card new-card--a">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"/></svg>
-          <h3>One Microphone list in Studio</h3>
-          <p>Pick an iPhone mic or a mic plugged into your Mac, all from one list. Choose a Mac mic and you get one finished video with that mic's sound, already in sync. There are no extra audio files to line up, and the leftovers go to the Trash. Your sound stays just as the mic recorded it, with no automatic volume changes.</p>
-        </article>
-        <article class="new-card new-card--b">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-          <h3>Your footage stays private</h3>
-          <p>Footage only goes to Macs you approve. The iPhone asks once for each Mac, and it checks that it is really your Mac.</p>
-        </article>
-        <article class="new-card new-card--c">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2.5"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8.5 6 10 4h4l1.5 2"/></svg>
-          <h3>PHOTO mode: 12 MP or 48 MP</h3>
-          <p>Take photos at 12 MP (the default) or 48 MP. Change it on the iPhone or from your Mac.</p>
-        </article>
-        <article class="new-card new-card--d">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M7 12h10M13.5 8.5 17 12l-3.5 3.5"/></svg>
-          <h3>Smooth lens switching</h3>
-          <p>Switch between 0.5× · 1× · 3× and the picture glides from one lens to the next. The camera also starts more smoothly.</p>
-        </article>
-        <article class="new-card new-card--e">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 15.5 12 8l3.5 7.5M9.8 13h4.4"/></svg>
-          <h3>A new look</h3>
-          <p>A new logo and new colours, with a short logo animation when the iPhone app opens.</p>
-        </article>
-      </div>
-
-      <h3 class="new-sub">Also in 1.2.1</h3>
-      <div class="new-grid">
-        <article class="new-card new-card--a">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M9 12.5v-3a3 3 0 0 1 6 0v3"/><rect x="8" y="12.5" width="8" height="5.5" rx="1.2"/></svg>
-          <h3>Lock focus and exposure, then swipe to adjust</h3>
-          <p>Press and hold the iPhone preview, or click and hold on the Mac, to lock focus and exposure like the native Camera app. Swipe up or down to brighten or darken. After a tap, focus goes back to auto when the scene changes.</p>
-        </article>
-        <article class="new-card new-card--b">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"/></svg>
-          <h3>Record your Mac's mic</h3>
-          <p>Pick a USB or podcast mic in Studio and it records on the Mac while the iPhone films. In 1.2.2 this got simpler: you now get one finished video with that mic's sound.</p>
-        </article>
-        <article class="new-card new-card--c">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4.5 3.5 3L15.5 12 20 16.5"/></svg>
-          <h3>Photos land on your Mac too</h3>
-          <p>Photos, including ones you trigger from the Mac, now arrive in the Footage folder on your Mac, just like your videos.</p>
-        </article>
-        <article class="new-card new-card--d">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M9 4.5v15M15 4.5v15M2.5 9.5h19M2.5 14.5h19"/></svg>
-          <h3>A redesigned camera screen and Studio</h3>
-          <p>The iPhone screen now looks like the native Camera app and stays readable over bright scenes. On the Mac, the controls are compact and float over the preview. Full screen is cleaner, with a grid and a level.</p>
-        </article>
-        <article class="new-card new-card--e">
-          <svg class="new-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-          <h3>Fewer interruptions</h3>
-          <p>A WhatsApp or phone call that takes the mic no longer causes a camera error. CamBridge keeps filming video only and recovers on its own after the call. The iPhone no longer drops into the StandBy clock while CamBridge is open. Full screen on the Mac exits cleanly with Esc, even after a disconnect. Lens order is now 0.5× · 1× · 3×.</p>
-        </article>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ORIENTATION -->
-  <section class="section orientation" id="orientation" aria-labelledby="orient-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2 id="orient-title">Every orientation. Not just one.</h2>
-        <p class="lead">Camo and Blackmagic Camera lock you into landscape. Shoot a vertical TikTok or Reel and you're fighting the app. CamBridge doesn't care which way you're holding your iPhone.</p>
-      </div>
-
-      <div class="orient-grid">
-        <div class="orient-card orient-card--them">
-          <h3 class="orient-label">Other apps</h3>
-          <div class="orient-vis">
-            <div class="o-phone o-phone--p o-phone--blocked" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="1.5"/><path d="M4 7 20 19M20 7 4 19"/></svg>
-            </div>
-          </div>
-          <p>Landscape only. Rotate the iPhone for a vertical reel and the feed breaks or crops.</p>
-        </div>
-        <div class="orient-card orient-card--us">
-          <h3 class="orient-label">CamBridge</h3>
-          <div class="orient-vis">
-            <div class="o-phone o-phone--p" aria-hidden="true">
-              <svg class="fill"><use href="#scene-bg"/></svg><svg class="fill"><use href="#scene-subj"/></svg>
-            </div>
-            <div class="o-phone o-phone--l" aria-hidden="true">
-              <svg class="fill"><use href="#scene-bg-w"/></svg><svg class="fill"><use href="#scene-subj-w"/></svg>
-            </div>
-          </div>
-          <p>Vertical for TikTok and Reels, horizontal for YouTube. The same rig, no re-mounting.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOLUTIONS -->
-  <section class="section solutions" id="solutions" aria-labelledby="sol-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="sol-title">Searching for a fix? You probably landed here from one of these.</h2>
-        <p class="lead">If any of this sounds familiar, CamBridge was built for exactly this.</p>
-      </div>
-
-      <div class="sol-grid">
-        <article>
-          <h3>Continuity Camera forces my vertical video into landscape 16:9</h3>
-          <p>Apple's Continuity Camera auto-rotates, stabilizes, and crops vertical footage into a horizontal frame. Great for webcam calls, useless for TikTok and Reels. CamBridge streams the true portrait frame straight from the iPhone. Nothing gets rotated or cropped.</p>
-        </article>
-        <article>
-          <h3>QuickTime only shows my iPhone camera in landscape</h3>
-          <p>Since Sonoma, using your iPhone as a camera source in QuickTime on macOS locks the preview to landscape, no matter how you're holding the phone. CamBridge is a native Mac monitor that follows your iPhone's actual orientation. Vertical stays vertical.</p>
-        </article>
-        <article>
-          <h3>How do I take photos with my iPhone from my Mac?</h3>
-          <p>See what the iPhone's camera sees, full-size, on your Mac. Tap the preview to pull focus, click a button to fire the shutter. True tethered shooting from your desk, no walking over to the phone.</p>
-        </article>
-        <article>
-          <h3>iPhone Mirroring won't open the Camera app</h3>
-          <p>iPhone Mirroring is built for everyday apps, not live camera control, so the Camera app simply isn't supported. CamBridge is built exactly for this gap: full remote camera control from your Mac, with a real live feed.</p>
-        </article>
-        <article>
-          <h3>Camo, EpocCam, or Blackmagic Camera didn't solve it</h3>
-          <p>Camo and EpocCam turn your iPhone into a webcam feed. EpocCam's remote can only snap pictures, not record video, and neither gives you real remote control. Blackmagic Camera's remote is iPhone-to-iPhone or iPad, not Mac. Screen Mirroring just takes over your whole display. CamBridge gives you real Mac-side remote control and real 4K files, recorded on the iPhone itself.</p>
-        </article>
-        <article>
-          <h3>Remote control my iPhone camera from my MacBook to record myself</h3>
-          <p>Put your iPhone on a tripod or a tall stand, walk back to your desk, and drive the whole shot from your MacBook: framing, focus, zoom, exposure, and the shutter, all without touching the phone again.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMPARISON -->
-  <section class="section comparison" id="comparison" aria-labelledby="cmp-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2 id="cmp-title">We built this because nothing else gave us both.</h2>
-        <p class="lead">Camo Studio and Blackmagic Camera are both real products, both worth trying. CamBridge exists because neither one gave us portrait AND landscape monitoring with real, full remote control from the Mac, so we built it.</p>
-      </div>
-
-      <div class="table-scroll" role="region" aria-label="Comparison table, scrolls sideways on small screens" tabindex="0">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th scope="col"><span class="sr-only">Feature</span></th>
-              <th scope="col" class="comparison-table-us">CamBridge (beta)</th>
-              <th scope="col">Camo Studio</th>
-              <th scope="col">Blackmagic Camera</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Price</th>
-              <td class="comparison-table-us">Free beta</td>
-              <td>Subscription</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <th scope="row">Both portrait AND landscape monitoring with full Mac-side remote control</th>
-              <td class="comparison-table-us">Yes</td>
-              <td>Webcam-focused</td>
-              <td>Limited Mac control</td>
-            </tr>
-            <tr>
-              <th scope="row">Remote tap-to-focus from the Mac</th>
-              <td class="comparison-table-us">Yes</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Real 4K files auto-moved to your Mac</th>
-              <td class="comparison-table-us">Yes</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Use a second iPhone as director's monitor</th>
-              <td class="comparison-table-us">Yes</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Record a Mac-attached mic in sync</th>
-              <td class="comparison-table-us">Yes</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Accounts required</th>
-              <td class="comparison-table-us">None</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="comparison-footnote">Comparison reflects our understanding as of October 2026. Check each product for current details.</p>
-    </div>
-  </section>
-
-  <!-- PRIVACY -->
-  <section class="section privacy-band" aria-labelledby="priv-title">
-    <div class="wrap privacy-grid">
-      <svg class="priv-mark" viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M 21 76 Q 50 52 79 76" fill="none" stroke="var(--accent-2)" stroke-width="5" stroke-linecap="round"/>
-        <circle cx="21" cy="76" r="6" fill="var(--accent-2)"/><circle cx="79" cy="76" r="6" fill="var(--accent-2)"/>
-        <circle cx="50" cy="38" r="21" fill="none" stroke="var(--accent)" stroke-width="5"/><circle cx="50" cy="38" r="6" fill="var(--accent)"/>
-      </svg>
-      <div>
-        <h2 id="priv-title">No accounts. Nothing leaves your room.</h2>
-        <p class="lead">CamBridge Camera and CamBridge Studio talk to each other directly over your local Wi‑Fi network or a USB cable. There's no sign‑up, no server in the middle, and nothing about your shoot leaves your network. Built in Swift, kept simple on purpose. What happens in your room stays between your iPhone and your Mac. <a href="privacy.html">Read the privacy policy</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROADMAP -->
-  <section class="section roadmap" id="roadmap" aria-labelledby="road-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="road-title">Shipped, and what's next.</h2>
-        <p class="lead">Roadmap items are labeled honestly until they ship, with no promised dates. Everything under Shipped is in the TestFlight beta today.</p>
-      </div>
-      <h3 class="road-sub">Shipped</h3>
-      <ul class="roadmap-list">
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Macro (1.2.3): a yellow flower appears when the macro lens kicks in, like the Camera app. Tap it to stay on the main camera. Works from the Mac too.</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Photos on your Mac (1.2.3): PHOTO-mode shots (12 MP or 48 MP) arrive in your Footage folder as the original files</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">More reliable Mac mic (1.2.3): switching mics works every time, a warning if a mic sends no sound (the iPhone's own audio is kept), and more precise sync on long recordings</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">One Microphone list (1.2.2): pick an iPhone mic or a Mac mic in one list. A Mac mic gives you one finished video with that mic's sound, already in sync, and the sound is kept as recorded.</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">PHOTO mode (1.2.2): photos at 12 MP (default) or 48 MP, changeable on the iPhone or from the Mac</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Smooth lens switching (1.2.2): 0.5× · 1× · 3× glides from one lens to the next, plus a smoother camera start</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">New look and privacy (1.2.2): new logo and colours, and footage only goes to Macs you approve (asked once per Mac)</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Multi-phone grid: Studio connects to several iPhones at once, click a tile for its program view, with per-phone controls and recording into Footage/&lt;phone name&gt;/</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Director mode: a second iPhone running CamBridge Camera acts as the director's monitor and remote (discover cameras on the network or connect by IP; the camera phone can require approval)</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">USB cable link: plug the iPhone into the Mac and Studio detects it automatically. Link menu: Auto, Cable only or Wi‑Fi only.</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">HEVC streaming: a hardware-encoded monitor stream with JPEG fallback and adaptive bitrate. Recording is always the real on-device 4K file.</span>
-        </li>
-        <li class="road-item road-item--shipped">
-          <span class="roadmap-tag">Shipped</span>
-          <span class="roadmap-text">Mac mic recording (1.2.1), now simpler in 1.2.2: choose a Mac mic and get one synced video</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FROM THE BLOG -->
-  <section class="section blog-feature" id="from-the-blog" aria-labelledby="blog-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <p class="eyebrow">From the blog</p>
-        <h2 id="blog-title">Guides and honest comparisons.</h2>
-      </div>
-      <div class="sol-grid">
-        <article>
-          <h3><a href="compare/blackmagic-vs-camo-vs-cambridge.html">Blackmagic Camera vs Camo vs CamBridge</a></h3>
-          <p>Which iPhone camera app suits Mac creators? The three-way overview.</p>
-          <a href="compare/blackmagic-vs-camo-vs-cambridge.html">Read the article &rarr;</a>
-        </article>
-        <article>
-          <h3><a href="guides/film-vertical-video-iphone-monitor-on-mac.html">Film vertical video and monitor it on your Mac</a></h3>
-          <p>True vertical TikTok, Reels and Shorts with a big live monitor.</p>
-          <a href="guides/film-vertical-video-iphone-monitor-on-mac.html">Read the article &rarr;</a>
-        </article>
-        <article>
-          <h3><a href="guides/record-video-podcast-iphone-usb-mic-mac.html">Record a video podcast with a USB mic</a></h3>
-          <p>iPhone camera, Mac-side mic, synced automatically.</p>
-          <a href="guides/record-video-podcast-iphone-usb-mic-mac.html">Read the article &rarr;</a>
-        </article>
-        <article>
-          <h3><a href="guides/continuity-camera-vs-cambridge.html">Continuity Camera vs CamBridge</a></h3>
-          <p>A webcam for calls, or a remote camera for recording: when to use each.</p>
-          <a href="guides/continuity-camera-vs-cambridge.html">Read the article &rarr;</a>
-        </article>
-      </div>
-      <p class="blog-more"><a href="blog/">All articles in the blog &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
   <section class="section faq" id="faq" aria-labelledby="faq-title">
     <div class="wrap faq-inner">
       <div class="section-head section-head--center">
@@ -897,16 +386,16 @@
 
       <div class="faq-list">
         <details class="faq-item">
+          <summary>Does it cost anything?</summary>
+          <p>It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What devices does this need?</summary>
+          <p>An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel).</p>
+        </details>
+        <details class="faq-item">
           <summary>Do I need Wi‑Fi, or can I use a cable?</summary>
           <p>Either. CamBridge works over the same Wi‑Fi network or over a USB cable. Plug the iPhone into the Mac and Studio detects the cable automatically, and the link menu lets you choose Auto, Cable only or Wi‑Fi only. Recording is always the real 4K file on the iPhone, so the link only carries the live monitor.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is this a finished app?</summary>
-          <p>No — CamBridge is currently a TestFlight beta distributed through Apple's TestFlight program. That means Apple has reviewed the build, but it's still in active development, things can change, and you're trying it before general release. Join via the buttons on this page.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What quality actually gets recorded?</summary>
-          <p>The real recording is full-quality 4K captured on the iPhone itself, and it's auto-transferred to your Mac when you stop. The live preview you see on your Mac while shooting is a separate, lighter monitoring feed — not the file that gets saved. Don't judge final quality by the live preview.</p>
         </details>
         <details class="faq-item">
           <summary>Does it work with my DJI wireless mic?</summary>
@@ -915,34 +404,6 @@
         <details class="faq-item">
           <summary>Does anything leave my network?</summary>
           <p>No. CamBridge has no accounts, no sign-up, and no cloud server in the middle — your iPhone and Mac talk directly over your local Wi‑Fi or a USB cable. See our <a href="privacy.html">privacy page</a> for details.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What devices does this need?</summary>
-          <p>An iPhone running iOS 17 or later, and a Mac running macOS 14 or later (Apple silicon or Intel).</p>
-        </details>
-        <details class="faq-item">
-          <summary>Does it cost anything?</summary>
-          <p>It's free during the beta. We don't have final pricing figured out yet — when that changes we'll be upfront about it, and people testing it now will be treated well. No specific promises beyond that.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can I use more than one iPhone?</summary>
-          <p>Yes. CamBridge Studio can connect to several iPhones at once and show them in a grid. Click a tile to open its program view, with per-phone controls and recording. Recordings land in Footage/ in a folder named after each phone. A second iPhone running CamBridge Camera can also act as the director's monitor and remote: it discovers cameras on the network or connects by IP, and the camera phone can require approval.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How do I report a bug or give feedback?</summary>
-          <p>Email <a href="mailto:mohsin.sapra@gmail.com">mohsin.sapra@gmail.com</a> — real feedback from beta testers directly shapes what gets built next.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How can I use my Mac to remotely take photos with my iPhone?</summary>
-          <p>Open CamBridge Camera on your iPhone and CamBridge Studio on your Mac — the live view shows up big on your Mac, you can tap anywhere in the preview to focus, and click the shutter button from your desk to trigger the photo on the iPhone. No accessories required, and a cable is optional.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Why does my vertical iPhone video turn horizontal on the Mac (Continuity Camera / QuickTime)?</summary>
-          <p>Apple's Continuity Camera and QuickTime's iPhone camera source are built around a landscape webcam feed — since macOS Sonoma, they auto-rotate, stabilize, and crop vertical footage into 16:9 horizontal. CamBridge is a different kind of app: it's a dedicated Mac monitor and remote control for the iPhone camera, so it streams and shows the true portrait frame with no rotation or cropping.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is CamBridge a webcam app like Camo or EpocCam?</summary>
-          <p>No. Camo and EpocCam turn your iPhone into a webcam feed for calls and streams. CamBridge is a remote camera and monitor system — the recording you get is the real 4K camera file saved on the iPhone itself, then auto-transferred to your Mac, not a lower-quality webcam stream.</p>
         </details>
       </div>
     </div>
@@ -1053,10 +514,7 @@
     </div>
     <p class="footer-tagline">Your iPhone is already a cinema camera. Your Mac is already your studio. CamBridge connects them.</p>
     <nav class="footer-links" aria-label="Footer">
-      <a href="#features">Features</a>
       <a href="#how-it-works">How it works</a>
-      <a href="#whats-new">What's new</a>
-      <a href="#orientation">Orientation</a>
       <a href="compare/">Compare</a>
       <a href="guides/">Guides</a>
       <a href="blog/">Blog</a>
