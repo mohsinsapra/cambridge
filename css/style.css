@@ -97,6 +97,15 @@ p a, .lead a { color: var(--accent-2-text); text-decoration: underline; text-und
 .section-head--center .lead { margin-inline: auto; }
 
 /* ---- header ---- */
+/* temporary service notice above the header */
+.status-banner { background: color-mix(in srgb, var(--ui-yellow) 16%, var(--bg)); border-bottom: 1px solid color-mix(in srgb, var(--ui-yellow) 45%, transparent); color: var(--ink); font-size: .92rem; line-height: 1.45; }
+.status-banner-inner { display: flex; align-items: center; justify-content: center; gap: .6rem; padding-block: .7rem; text-align: center; }
+.status-banner p { margin: 0; }
+.status-banner p[lang="sv"] { color: var(--ink-dim); margin-top: .15rem; }
+.status-banner p[lang="sv"] a { color: var(--ink-dim); }
+.status-banner a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.status-dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--ui-yellow); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ui-yellow) 30%, transparent); }
+@media (max-width: 600px) { .status-dot { display: none; } }
 .site-header { position: sticky; top: 0; z-index: 100; background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: saturate(160%) blur(16px); -webkit-backdrop-filter: saturate(160%) blur(16px); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: .6rem; }
