@@ -600,7 +600,7 @@ body.home .status-banner-inner { padding-block: .5rem; }
 /* floating pill header */
 body.home .site-header { position: sticky; top: 0; z-index: 100; isolation: isolate; padding: 12px var(--gutter) 0; margin-top: 0; background: none; border: 0; backdrop-filter: none; -webkit-backdrop-filter: none; }
 /* page-coloured fade behind the floating nav, so scrolled content doesn't show above it */
-body.home .site-header::before { content: ""; position: absolute; inset: 0 0 -28px 0; z-index: -1; pointer-events: none; background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 45%, color-mix(in srgb, var(--bg) 0%, transparent) 100%); }
+body.home .site-header::before { content: ""; position: absolute; inset: 0 0 -72px 0; z-index: -1; pointer-events: none; background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 14%, color-mix(in srgb, var(--bg) 92%, transparent) 30%, color-mix(in srgb, var(--bg) 75%, transparent) 46%, color-mix(in srgb, var(--bg) 52%, transparent) 62%, color-mix(in srgb, var(--bg) 28%, transparent) 78%, color-mix(in srgb, var(--bg) 10%, transparent) 90%, transparent 100%); }
 body.home .header-inner { position: relative; max-width: 1100px; min-height: 60px; padding: .45rem .55rem .45rem 1.2rem; background: color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter: saturate(170%) blur(18px); -webkit-backdrop-filter: saturate(170%) blur(18px); border: 1px solid var(--line); border-radius: 999px; box-shadow: var(--shadow-sm); }
 body.home .brand-name { font-family: var(--heading); font-weight: 900; font-size: 1.25rem; letter-spacing: -0.03em; }
 body.home .primary-nav { font-size: .92rem; font-weight: 600; }
