@@ -11,10 +11,13 @@
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#F6F8FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1428" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f9fc" media="(prefers-color-scheme: light)">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="css/style.css?v=12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900&display=swap">
+<link rel="stylesheet" href="css/style.css?v=13">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -109,7 +112,7 @@
   gtag('config', 'G-WYMT6EVL6R', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
 </script>
 </head>
-<body>
+<body class="home">
 
 <!-- Shared artwork for the app mockups. Pure SVG, no photos. -->
 <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
@@ -219,8 +222,8 @@
   <!-- HERO -->
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-copy">
-      <p class="beta-chip"><span class="rec-dot" aria-hidden="true"></span>Free public beta on TestFlight</p>
-      <h1 class="hero-title" id="hero-title">Your iPhone is already a cinema camera. Bridge it to your Mac.</h1>
+      <p class="hero-eyebrow"><svg aria-hidden="true"><use href="#i-phone"/></svg>Free public beta on TestFlight &middot; iPhone + Mac</p>
+      <h1 class="hero-title" id="hero-title"><span class="h1-a">Your iPhone is already a cinema camera.</span> <span class="h1-grad">Bridge it to your Mac.</span></h1>
       <p class="hero-pitch">See the shot big, control every setting from your desk, and get real 4K footage back on your Mac automatically. Wi‑Fi or a cable, no accounts.</p>
       <div class="cta-row">
         <!-- TESTFLIGHT_IOS_URL -->
@@ -232,7 +235,7 @@
     </div>
 
     <div class="wrap">
-      <div class="stage" role="img" aria-label="CamBridge Studio on a Mac showing the live view from an iPhone, with the CamBridge camera screen on the iPhone beside it, linked by a signal arc.">
+      <div class="stage-card"><div class="stage" role="img" aria-label="CamBridge Studio on a Mac showing the live view from an iPhone, with the CamBridge camera screen on the iPhone beside it, linked by a signal arc.">
         <div class="stage-glow" aria-hidden="true"></div>
 
         <!-- MAC -->
@@ -296,23 +299,56 @@
             <span class="shutter"><i></i></span>
           </div>
         </div>
-      </div>
+      </div></div>
     </div>
   </section>
 
-  <!-- DEMO -->
-  <section class="section demo" id="demo" aria-labelledby="demo-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2 id="demo-title">See it running on real devices.</h2>
-        <p class="lead">An unedited walkthrough: iPhone on the stand, CamBridge Studio on the Mac. Live monitoring, remote controls, and footage landing in the folder.</p>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group"><span class="w-solid">YouTube</span><i>&#10022;</i><span class="w-out">Shorts</span><i>&#10022;</i><span class="w-solid">Reels</span><i>&#10022;</i><span class="w-out">TikTok</span><i>&#10022;</i><span class="w-solid">Podcasts</span><i>&#10022;</i><span class="w-out">Courses</span><i>&#10022;</i><span class="w-solid">Vlogs</span><i>&#10022;</i><span class="w-out">Tutorials</span><i>&#10022;</i><span class="w-solid">YouTube</span><i>&#10022;</i><span class="w-out">Shorts</span><i>&#10022;</i><span class="w-solid">Reels</span><i>&#10022;</i><span class="w-out">TikTok</span><i>&#10022;</i><span class="w-solid">Podcasts</span><i>&#10022;</i><span class="w-out">Courses</span><i>&#10022;</i><span class="w-solid">Vlogs</span><i>&#10022;</i><span class="w-out">Tutorials</span><i>&#10022;</i></div>
+      <div class="marquee-group"><span class="w-solid">YouTube</span><i>&#10022;</i><span class="w-out">Shorts</span><i>&#10022;</i><span class="w-solid">Reels</span><i>&#10022;</i><span class="w-out">TikTok</span><i>&#10022;</i><span class="w-solid">Podcasts</span><i>&#10022;</i><span class="w-out">Courses</span><i>&#10022;</i><span class="w-solid">Vlogs</span><i>&#10022;</i><span class="w-out">Tutorials</span><i>&#10022;</i><span class="w-solid">YouTube</span><i>&#10022;</i><span class="w-out">Shorts</span><i>&#10022;</i><span class="w-solid">Reels</span><i>&#10022;</i><span class="w-out">TikTok</span><i>&#10022;</i><span class="w-solid">Podcasts</span><i>&#10022;</i><span class="w-out">Courses</span><i>&#10022;</i><span class="w-solid">Vlogs</span><i>&#10022;</i><span class="w-out">Tutorials</span><i>&#10022;</i></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS + DEMO -->
+  <section class="night" id="how-it-works" aria-labelledby="how-title">
+    <div class="night-inner">
+      <div class="night-head">
+        <p class="eyebrow-blue">Connect &rarr; Shoot &rarr; Footage lands</p>
+        <h2 id="how-title">From iPhone to Mac, in under a minute.</h2>
       </div>
-      <div class="demo-player">
-        <video controls playsinline preload="none" width="1920" height="1080" poster="media/cambridge-demo-poster.jpg" aria-label="CamBridge demo: an iPhone controlled from CamBridge Studio on a MacBook">
-          <source src="media/cambridge-demo.mp4" type="video/mp4">
-          Your browser doesn't support embedded video. <a href="media/cambridge-demo.mp4">Download the demo</a>.
-        </video>
-        <p class="demo-hint">The video loads only when you press play (about 50 MB).</p>
+      <div class="night-grid">
+        <ol class="flow">
+          <li class="flow-item is-on">
+            <span class="flow-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Open CamBridge on your iPhone</h3>
+              <p>Prop your iPhone up on a small tripod, a stand, or just leaning against something, and open the app.</p>
+            </div>
+          </li>
+          <li class="flow-item">
+            <span class="flow-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Open CamBridge on your Mac</h3>
+              <p>Open the Mac app on the same Wi‑Fi, or plug in a USB cable, and your iPhone shows up automatically. No pairing codes.</p>
+            </div>
+          </li>
+          <li class="flow-item">
+            <span class="flow-num" aria-hidden="true">03</span>
+            <div>
+              <h3>You're connected. Start shooting.</h3>
+              <p>Your shot appears big on your Mac in seconds, with full control ready to go.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="demo-player" id="demo">
+          <video controls playsinline preload="none" width="1920" height="1080" poster="media/cambridge-demo-poster.jpg" aria-label="CamBridge demo: an iPhone controlled from CamBridge Studio on a MacBook">
+            <source src="media/cambridge-demo.mp4" type="video/mp4">
+            Your browser doesn't support embedded video. <a href="media/cambridge-demo.mp4">Download the demo</a>.
+          </video>
+          <p class="demo-cap"><strong>See it running on real devices.</strong> An unedited walkthrough: iPhone on the stand, CamBridge Studio on the Mac. Live monitoring, remote controls, and footage landing in the folder.</p>
+          <p class="demo-hint">The video loads only when you press play (about 50 MB).</p>
+        </div>
       </div>
     </div>
   </section>
@@ -321,6 +357,7 @@
   <section class="section problems" id="why" aria-labelledby="why-title">
     <div class="wrap">
       <div class="section-head section-head--center">
+        <p class="eyebrow-blue">Why CamBridge</p>
         <h2 id="why-title">The problem, and how CamBridge solves it.</h2>
       </div>
       <ul class="ps-grid">
@@ -352,36 +389,11 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section how" id="how-it-works" aria-labelledby="how-title">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <h2 id="how-title">Connected in under a minute.</h2>
-      </div>
-      <ol class="steps">
-        <li class="step">
-          <span class="step-num" aria-hidden="true">1</span>
-          <h3>Open CamBridge on your iPhone</h3>
-          <p>Prop your iPhone up on a small tripod, a stand, or just leaning against something, and open the app.</p>
-        </li>
-        <li class="step">
-          <span class="step-num" aria-hidden="true">2</span>
-          <h3>Open CamBridge on your Mac</h3>
-          <p>Open the Mac app on the same Wi‑Fi, or plug in a USB cable, and your iPhone shows up automatically. No pairing codes.</p>
-        </li>
-        <li class="step">
-          <span class="step-num" aria-hidden="true">3</span>
-          <h3>You're connected. Start shooting.</h3>
-          <p>Your shot appears big on your Mac in seconds, with full control ready to go.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
   <section class="section faq" id="faq" aria-labelledby="faq-title">
     <div class="wrap faq-inner">
       <div class="section-head section-head--center">
-        <h2 id="faq-title">Straight answers, no marketing spin.</h2>
+        <p class="eyebrow-blue">FAQ</p>
+        <h2 id="faq-title">Good to know.</h2>
       </div>
 
       <div class="faq-list">
