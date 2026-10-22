@@ -1,0 +1,14 @@
+{
+  "ios": {
+    "version": "1.4.3",
+    "build": 53,
+    "url": "https://testflight.apple.com/join/Qc7sRP4t",
+    "notes": "New photo gallery, Dim iPhone now from the Mac, grouped settings with search, and a fix for a crash when pressing Record."
+  },
+  "mac": {
+    "version": "1.5.1",
+    "build": 23,
+    "url": "https://testflight.apple.com/join/65SqwXFX",
+    "notes": "Dim iPhone now, Mirror live view, and a layout that fits small windows."
+  }
+}
