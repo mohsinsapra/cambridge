@@ -14,15 +14,22 @@ if [ "$(uname -s)" != "Darwin" ]; then
   exit 1
 fi
 
+DEST="${CAMBRIDGE_INSTALL_DIR:-/Applications}"
+[ -w "$DEST" ] || { DEST="$HOME/Applications"; mkdir -p "$DEST"; }
+
+# A TestFlight / App Store copy is owned by root and can't be replaced here.
+if [ -e "$DEST/$APP_NAME" ] && [ ! -w "$DEST/$APP_NAME" ]; then
+  echo "A TestFlight or App Store copy of CamBridge Studio is already in $DEST." >&2
+  echo "Move it to the Trash in Finder, then run this installer again." >&2
+  exit 1
+fi
+
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 echo "==> Downloading CamBridge Studio..."
 curl -fL --progress-bar "$URL" -o "$TMP/CamBridge-Studio.zip"
 ditto -x -k "$TMP/CamBridge-Studio.zip" "$TMP"
-
-DEST="/Applications"
-[ -w "$DEST" ] || { DEST="$HOME/Applications"; mkdir -p "$DEST"; }
 
 if pgrep -xq "CamBridge Studio"; then
   echo "==> Quitting the running CamBridge Studio..."
