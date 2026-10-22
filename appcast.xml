@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>CamBridge Studio</title>
+        <item>
+            <title>1.5.5</title>
+            <pubDate>Thu, 22 Oct 2026 22:26:35 +0200</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.5.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<html><body style='font-family:-apple-system'><p>New in this build — please update CamBridge Camera on your iPhone too:</p><p>• Dim iPhone now: a new button (top bar and side panel) darkens your iPhone screen immediately while recording and the live view keep running — saves battery and keeps the phone cooler. Tap the phone to wake it.</p><p>• Mirror live view: new switch in the side panel flips the live view on your Mac like a mirror. Recordings are never mirrored, and click-to-focus still lands where you click.</p><p>• Settings are now grouped (Live view, Video, Photo, Exposure &amp; focus, Audio, iPhone power, Advanced) with collapsible sections and a search box at the top. The gear button now opens this panel, and Footage folder + Diagnostics moved into it under &quot;This Mac&quot; (usable even without an iPhone connected) — type e.g. &quot;fps&quot;, &quot;mirror&quot; or &quot;battery&quot;.</p><p>• Small windows: the connection pill and lens/zoom bar now fit narrow windows instead of wrapping text letter by letter.</p><p>• Update reminders: CamBridge now tells you when a newer version is available (Update / Later), and confirms after you update.</p><p>• Dim / Wake toggle: the same button dims the iPhone screen and wakes it again (update CamBridge on your iPhone too).</p><p>• Double-click the top bar to zoom the window to fill the screen (follows your macOS setting), and drag it to move the window.</p><p>• Removed the stray &quot;»&quot; button at the top-right; Refresh now sits at the bottom of the camera list.</p><p>Crash and error reports are sent anonymously so we can fix bugs faster. Please report anything odd via TestFlight feedback.</p></body></html>]]></description>
+            <enclosure url="https://github.com/mohsinsapra/cambridge/releases/download/studio-v1.5.5-build.27/CamBridge-Studio-1.5.5.zip" length="6252160" type="application/octet-stream" sparkle:edSignature="iZ0OunlxmJAw1BXEIfGa+Ju8OFfVC9mVWRaH7lt+5wDxJmg1UZHo+HeTX+Nuax9QNXovRmijrxVPl2t2AcB4Cw=="/>
+        </item>
+    </channel>
+</rss>
