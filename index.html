@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900&display=swap">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -184,7 +184,7 @@
   <div class="wrap status-banner-inner">
     <span class="status-dot" aria-hidden="true"></span>
     <div class="status-text">
-      <p>CamBridge is back on TestFlight with new links. Tested it before? Your old beta has ended, so <a href="#get-beta">join again here</a> to get the latest version.</p>
+      <p data-beta-banner>CamBridge is back on TestFlight with new links. Tested it before? Your old beta has ended, so <a href="#get-beta">join again here</a> to get the latest version.</p>
     </div>
   </div>
 </div>
@@ -212,7 +212,7 @@
       <a href="#how-it-works">How it works</a>
       <a href="blog/">Blog</a>
       <a href="#faq">FAQ</a>
-      <a class="nav-cta" href="https://testflight.apple.com/join/Qc7sRP4t">Join the beta</a>
+      <a class="nav-cta" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t">Join the beta</a>
     </nav>
   </div>
 </header>
@@ -227,9 +227,9 @@
       <p class="hero-pitch">See the shot big, control every setting from your desk, and get real 4K footage back on your Mac automatically. Wi‑Fi or a cable, no accounts.</p>
       <div class="cta-row">
         <!-- TESTFLIGHT_IOS_URL -->
-        <a class="btn btn-primary" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
+        <a class="btn btn-primary" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
         <!-- TESTFLIGHT_MAC_URL -->
-        <a class="btn btn-secondary" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
+        <a class="btn btn-secondary" data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
       </div>
       <p class="cta-note">TestFlight &nbsp;·&nbsp; iOS 17 or later &nbsp;·&nbsp; macOS 14 or later</p>
     </div>
@@ -427,8 +427,8 @@
       <h2 id="get-title">Try it on your own desk.</h2>
       <p class="lead">Free while it's in beta. Install the iPhone app and the Mac app, open both on the same Wi‑Fi (or connect a cable), and you're shooting.</p>
       <div class="cta-row cta-row--center">
-        <a class="btn btn-primary" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
-        <a class="btn btn-secondary" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
+        <a class="btn btn-primary" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
+        <a class="btn btn-secondary" data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
       </div>
       <p class="cta-note">TestFlight &nbsp;·&nbsp; iPhone: iOS 17 or later &nbsp;·&nbsp; Mac: macOS 14 or later, Apple silicon or Intel</p>
     </div>
@@ -534,11 +534,11 @@
       <a href="#updates">Updates</a>
       <a href="privacy.html">Privacy</a>
     </nav>
-    <p class="footer-copy">CamBridge Camera + CamBridge Studio. Join the beta: <a href="https://testflight.apple.com/join/Qc7sRP4t">iPhone</a> · <a href="https://testflight.apple.com/join/65SqwXFX">Mac</a></p>
+    <p class="footer-copy">CamBridge Camera + CamBridge Studio. Join the beta: <a data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t">iPhone</a> · <a data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX">Mac</a></p>
   </div>
 </footer>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 <script src="js/consent.js?v=3"></script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script defer src="js/signup.js?v=2"></script>

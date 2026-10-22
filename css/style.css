@@ -707,3 +707,6 @@ body.home .footer-brand .brand-name { font-family: var(--heading); font-weight: 
 /* hero mockup is above the fold: never hold its entrance animation paused */
 .js body.home .stage-card .stage * { animation-play-state: running; }
 body.home .stage .mac, body.home .stage .phone, body.home .stage .stage-arc { animation: none; opacity: 1; }
+
+/* Beta link while Apple's beta review is pending (js/main.js). */
+.btn.is-pending { opacity: .75; }
