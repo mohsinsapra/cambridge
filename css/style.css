@@ -710,3 +710,18 @@ body.home .stage .mac, body.home .stage .phone, body.home .stage .stage-arc { an
 
 /* Beta link while Apple's beta review is pending (js/main.js). */
 .btn.is-pending { opacity: .75; }
+
+/* Mac direct download (#mac-download). */
+.mac-download { padding-block: 0 clamp(2rem, 5vw, 4rem); }
+.install-steps { margin-top: 2.5rem; width: 100%; max-width: 40rem; text-align: left; }
+.install-steps h3 { font-size: 1.1rem; margin: 1.75rem 0 .6rem; }
+.install-steps p, .install-steps li { color: var(--ink-dim); line-height: 1.55; }
+.install-steps ol { list-style: decimal; padding-left: 1.4rem; display: grid; gap: .35rem; margin-bottom: 1rem; }
+.install-steps ol li::marker { color: var(--ink); font-weight: 700; }
+.install-steps strong { color: var(--ink); }
+.install-steps kbd { font: inherit; font-size: .85em; padding: .05em .4em; border: 1px solid var(--line-strong); border-radius: .35em; background: var(--surface-2); color: var(--ink); }
+.install-cmd { display: flex; align-items: center; gap: .5rem; margin: .75rem 0 .5rem; padding: .55rem .55rem .55rem 1rem; border: 1px solid var(--line-strong); border-radius: .9rem; background: var(--surface-2); }
+.install-cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font: 500 .92rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); }
+.copy-btn { flex: none; padding: .45rem .9rem; border-radius: 99px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font-weight: 600; font-size: .85rem; cursor: pointer; }
+.copy-btn:hover { border-color: var(--accent-2); }
+.install-hint { font-size: .92rem; }

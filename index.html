@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900&display=swap">
-<link rel="stylesheet" href="css/style.css?v=16">
+<link rel="stylesheet" href="css/style.css?v=17">
 
 <!-- Open Graph -->
 <meta property="og:title" content="CamBridge — Remote control your iPhone camera from your Mac">
@@ -435,6 +435,37 @@
     </div>
   </section>
 
+  <!-- MAC DIRECT DOWNLOAD -->
+  <section class="section mac-download" id="mac-download" aria-labelledby="mac-dl-title">
+    <div class="wrap"><div class="get-inner">
+      <h2 id="mac-dl-title">Download CamBridge Studio for Mac</h2>
+      <p class="lead">Install the Mac app straight from here, no TestFlight needed. It's signed and notarized by Apple and updates itself from inside the app.</p>
+      <div class="cta-row cta-row--center">
+        <a class="btn btn-primary" href="https://github.com/mohsinsapra/cambridge/releases/latest/download/CamBridge-Studio.zip"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Download for Mac</a>
+      </div>
+      <p class="cta-note">macOS 14 or later &nbsp;·&nbsp; Apple silicon or Intel &nbsp;·&nbsp; free while in beta</p>
+
+      <div class="install-steps">
+        <h3>Install in one line</h3>
+        <p>Open <strong>Terminal</strong> (press <kbd>⌘</kbd> <kbd>Space</kbd>, type “Terminal”), paste this and press Return:</p>
+        <div class="install-cmd">
+          <code id="installCmd">curl -fsSL https://mohsin.se/cambridge/install.sh | sh</code>
+          <button class="copy-btn" type="button" data-copy="installCmd">Copy</button>
+        </div>
+        <p class="install-hint">It downloads the latest version, puts it in Applications and opens it.</p>
+
+        <h3>Or install it by hand</h3>
+        <ol>
+          <li>Click <strong>Download for Mac</strong> above.</li>
+          <li>Open the downloaded <strong>CamBridge-Studio.zip</strong> (usually in Downloads) to unzip it.</li>
+          <li>Drag <strong>CamBridge Studio</strong> into your <strong>Applications</strong> folder and open it.</li>
+        </ol>
+        <p class="install-hint">Have the TestFlight version installed? Move it to the Trash first. Updates arrive inside the app: <em>CamBridge Studio › Check for Updates…</em></p>
+      </div>
+    </div>
+    </div>
+  </section>
+
   <!-- UPDATES / SIGNUP -->
   <section id="updates" class="section updates" aria-labelledby="upd-title">
     <div class="wrap updates-inner">
@@ -538,7 +569,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 <script src="js/consent.js?v=3"></script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script defer src="js/signup.js?v=2"></script>

@@ -48,19 +48,35 @@
       document.querySelectorAll('[data-beta]').forEach(function (a) {
         var platform = a.getAttribute('data-beta');
         if (status[platform] === 'live') return;
-        a.href = '#updates';
-        a.classList.add('is-pending');
+        // The Mac app has a direct download; only iPhone has to wait.
+        var direct = platform === 'mac';
+        a.href = direct ? '#mac-download' : '#updates';
+        if (!direct) a.classList.add('is-pending');
         if (a.classList.contains('btn')) {
           var icon = a.querySelector('svg');
-          a.textContent = names[platform] + ' beta opens soon';
+          a.textContent = direct ? 'Download for Mac' : names[platform] + ' beta opens soon';
           if (icon) a.insertBefore(icon, a.firstChild);
         }
       });
       var banner = document.querySelector('[data-beta-banner]');
       if (banner && (status.ios !== 'live' || status.mac !== 'live')) {
-        banner.innerHTML = 'CamBridge is moving to new TestFlight links, and Apple is reviewing the new beta now. ' +
-          '<a href="#updates">Leave your email</a> and we\'ll tell you the moment it opens.';
+        banner.innerHTML = 'The Mac app is ready: <a href="#mac-download">download CamBridge Studio</a>. ' +
+          'The iPhone beta opens soon. <a href="#updates">Leave your email</a> and we\'ll tell you the moment it does.';
       }
     })
     .catch(function () {});
+})();
+
+// Copy buttons for the install command.
+(function () {
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = document.getElementById(btn.getAttribute('data-copy')).textContent;
+      var done = function () {
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+      };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
+    });
+  });
 })();
