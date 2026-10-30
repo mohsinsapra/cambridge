@@ -1,0 +1,1 @@
+{ "name": "cambridge-signup", "private": true, "type": "module", "scripts": { "test": "node --test test/attribution.test.mjs" } }

@@ -24,6 +24,14 @@
     return checked ? checked.value : '';
   }
 
+  function getAcquisition() {
+    try {
+      return typeof window.cbAcquisition === 'function' ? window.cbAcquisition() : { ft: null, lt: null };
+    } catch (e) {
+      return { ft: null, lt: null };
+    }
+  }
+
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -49,7 +57,9 @@
       platform: getCheckedValue('platform') || 'both',
       use_case: (useCaseInput && useCaseInput.value || '').trim(),
       website: (form.querySelector('input[name="website"]') || {}).value || '',
-      turnstile_token: turnstileToken
+      turnstile_token: turnstileToken,
+      // First/last-touch acquisition record from js/attribution.js (null when unavailable).
+      acq: getAcquisition()
     };
 
     if (submitBtn) {
@@ -73,6 +83,10 @@
         var data = result.data;
         if (data && data.ok) {
           setStatus("You're on the list — thanks!", 'success');
+          // GA4 conversion; gtag is the page's existing, consent-mode-gated tag.
+          try {
+            if (typeof gtag === 'function') gtag('event', 'sign_up', { method: 'waitlist' });
+          } catch (e) {}
           if (emailInput) emailInput.value = '';
           if (useCaseInput) useCaseInput.value = '';
         } else {
