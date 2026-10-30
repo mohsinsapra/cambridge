@@ -1,3 +1,5 @@
+import { ACQ_COLUMNS, sanitizeAcq } from "./attribution.js";
+
 const ALLOWED_ORIGINS = new Set([
 	"https://mohsin.se",
 	"http://mohsin.se",
@@ -109,11 +111,15 @@ async function handlePost(request, env, origin) {
 	const userAgent = request.headers.get("User-Agent") || null;
 	const referer = request.headers.get("Referer") || null;
 
+	// Acquisition attribution is stored on INSERT only; INSERT OR IGNORE means a repeat
+	// signup for the same email never overwrites the original first touch.
+	const acq = sanitizeAcq(data.acq);
+
 	try {
 		await env.DB.prepare(
-			"INSERT OR IGNORE INTO signups (email, channel, platform, use_case, user_agent, referer) VALUES (?, ?, ?, ?, ?, ?)"
+			`INSERT OR IGNORE INTO signups (email, channel, platform, use_case, user_agent, referer, ${ACQ_COLUMNS.join(", ")}) VALUES (?, ?, ?, ?, ?, ?, ${ACQ_COLUMNS.map(() => "?").join(", ")})`
 		)
-			.bind(email, data.channel, data.platform, useCase, userAgent, referer)
+			.bind(email, data.channel, data.platform, useCase, userAgent, referer, ...ACQ_COLUMNS.map((k) => acq[k]))
 			.run();
 	} catch {
 		return jsonResponse({ ok: false, error: "Something went wrong storing your signup. Please try again." }, 500, origin);
