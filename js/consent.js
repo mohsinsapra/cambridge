@@ -38,6 +38,7 @@
     try { localStorage.setItem(KEY, choice); } catch (e) {}
     bar.remove();
     if (choice === 'granted') grant();
+    else if (window.posthog && window.posthog.opt_out_capturing) window.posthog.opt_out_capturing();
   }
   bar.querySelector('.consent-btn--accept').addEventListener('click', function () { close('granted'); });
   bar.querySelector('.consent-btn--decline').addEventListener('click', function () { close('denied'); });
