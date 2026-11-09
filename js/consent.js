@@ -8,6 +8,7 @@
 
   function grant() {
     if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: 'granted' });
+    if (window.posthog && window.posthog.set_config) window.posthog.set_config({ persistence: 'localStorage+cookie' });
   }
 
   if (saved === 'granted') { grant(); return; }
@@ -26,7 +27,7 @@
   bar.setAttribute('role', 'dialog');
   bar.setAttribute('aria-label', 'Cookie consent');
   bar.innerHTML =
-    '<p class="consent-text">We use Google Analytics (anonymized) to see how many people visit. No ads, no personalization. <a href="' + privacyUrl + '">Privacy</a></p>' +
+    '<p class="consent-text">We use Google Analytics (anonymized) and PostHog (EU) to see how many people visit. No ads, no personalization. <a href="' + privacyUrl + '">Privacy</a></p>' +
     '<div class="consent-actions">' +
     '<button type="button" class="consent-btn consent-btn--accept">Accept</button>' +
     '<button type="button" class="consent-btn consent-btn--decline">Decline</button>' +
@@ -37,6 +38,7 @@
     try { localStorage.setItem(KEY, choice); } catch (e) {}
     bar.remove();
     if (choice === 'granted') grant();
+    else if (window.posthog && window.posthog.opt_out_capturing) window.posthog.opt_out_capturing();
   }
   bar.querySelector('.consent-btn--accept').addEventListener('click', function () { close('granted'); });
   bar.querySelector('.consent-btn--decline').addEventListener('click', function () { close('denied'); });

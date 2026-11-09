@@ -86,6 +86,7 @@
           // GA4 conversion; gtag is the page's existing, consent-mode-gated tag.
           try {
             if (typeof gtag === 'function') gtag('event', 'sign_up', { method: 'waitlist' });
+            if (window.posthog && window.posthog.capture) window.posthog.capture('sign_up', { method: 'waitlist' });
           } catch (e) {}
           if (emailInput) emailInput.value = '';
           if (useCaseInput) useCaseInput.value = '';
