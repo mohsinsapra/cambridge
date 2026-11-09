@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://mohsin.se/cambridge/blog/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://mohsin.se/cambridge/guides/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -93,6 +93,12 @@
   <url>
     <loc>https://mohsin.se/cambridge/guides/continuity-camera-vs-cambridge.html</loc>
     <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mohsin.se/cambridge/guides/iphone-as-webcam-mac.html</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
