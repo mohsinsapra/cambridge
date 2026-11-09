@@ -40,3 +40,7 @@
 .all-articles { display: inline-block; margin-bottom: 1rem; font-size: .92rem; }
 .guide .hub-list { list-style: none; padding: 0; margin-left: 0; }
 .hub-list time { display: block; margin-top: .45rem; font-size: .82rem; color: var(--ink-dim); }
+.guide-photo { margin: 1.6rem 0; }
+.guide-photo img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+.guide-photo figcaption { margin-top: .55rem; font-size: .9rem; color: var(--ink-dim); }
+.guide ol:not(.gsteps) { list-style: decimal; padding-left: 1.4rem; margin: 0 0 1rem; max-width: 68ch; }
