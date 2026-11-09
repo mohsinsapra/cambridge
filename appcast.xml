@@ -3,6 +3,15 @@
     <channel>
         <title>CamBridge Studio</title>
         <item>
+            <title>1.5.9</title>
+            <pubDate>Mon, 09 Nov 2026 12:34:51 +0100</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>1.5.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<html><body style='font-family:-apple-system'><p>Small behind-the-scenes update:</p><p>• Anonymous usage statistics (the same events as before, e.g. a camera connecting or a recording starting) are now also sent to PostHog, hosted in the EU, so we can see which features matter most. No names, file names, recordings or other personal data are collected.</p><p>Crash and error reports are sent anonymously so we can fix bugs faster.</p></body></html>]]></description>
+            <enclosure url="https://github.com/mohsinsapra/cambridge/releases/download/studio-v1.5.9-build.31/CamBridge-Studio-1.5.9.zip" length="7451514" type="application/octet-stream" sparkle:edSignature="c8CYwXJzoTewr5gswiEvjhCSqRPK+W9mDuhdkRXCprF53Ly/qAcE9QDCH4O6lj/iXlQ8WpOsH1xTIOkXljBiCw=="/>
+        </item>
+        <item>
             <title>1.5.5</title>
             <pubDate>Thu, 22 Oct 2026 22:26:35 +0200</pubDate>
             <sparkle:version>27</sparkle:version>
