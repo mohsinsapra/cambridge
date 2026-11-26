@@ -48,7 +48,7 @@
   },
   "url": "https://mohsin.se/cambridge/",
   "softwareVersion": "1.4.0",
-  "releaseNotes": "TestFlight 1.4.0, October 2026: CamBridge is back on TestFlight with new beta links. Dim the iPhone screen from the Mac while recording, mirror the live view, and stability fixes for reconnecting and live preview.",
+  "releaseNotes": "Private testing, 1.4.0: dim the iPhone screen from the Mac while recording, mirror the live view, and stability fixes for reconnecting and live preview.",
   "description": "CamBridge turns your iPhone into a remote-controlled camera and live monitor for your Mac. See your framing big, shoot true vertical or horizontal video without cropping, tap to focus, and record real 4K on-device — footage auto-transfers to your Mac."
 }
 </script>
@@ -184,7 +184,7 @@
   <div class="wrap status-banner-inner">
     <span class="status-dot" aria-hidden="true"></span>
     <div class="status-text">
-      <p data-beta-banner>CamBridge is back on TestFlight with new links. Tested it before? Your old beta has ended, so <a href="#get-beta">join again here</a> to get the latest version.</p>
+      <p>CamBridge is in private testing right now. <a href="#updates">Join the beta list</a> and we'll email you when your spot opens.</p>
     </div>
   </div>
 </div>
@@ -212,7 +212,7 @@
       <a href="#how-it-works">How it works</a>
       <a href="blog/">Blog</a>
       <a href="#faq">FAQ</a>
-      <a class="nav-cta" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t">Join the beta</a>
+      <a class="nav-cta" href="#updates">Join the beta list</a>
     </nav>
   </div>
 </header>
@@ -222,16 +222,14 @@
   <!-- HERO -->
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-copy">
-      <p class="hero-eyebrow"><svg aria-hidden="true"><use href="#i-phone"/></svg>Free public beta on TestFlight &middot; iPhone + Mac</p>
+      <p class="hero-eyebrow"><svg aria-hidden="true"><use href="#i-phone"/></svg>Coming soon &middot; iPhone + Mac &middot; free beta list open</p>
       <h1 class="hero-title" id="hero-title"><span class="h1-a">Your iPhone is already a cinema camera.</span> <span class="h1-grad">Bridge it to your Mac.</span></h1>
       <p class="hero-pitch">See the shot big, control every setting from your desk, and get real 4K footage back on your Mac automatically. Wi‑Fi or a cable, no accounts.</p>
       <div class="cta-row">
-        <!-- TESTFLIGHT_IOS_URL -->
-        <a class="btn btn-primary" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
-        <!-- TESTFLIGHT_MAC_URL -->
-        <a class="btn btn-secondary" data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
+        <a class="btn btn-primary" href="#updates"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the beta list</a>
+        <a class="btn btn-secondary" href="#demo">Watch the demo</a>
       </div>
-      <p class="cta-note">TestFlight &nbsp;·&nbsp; iOS 17 or later &nbsp;·&nbsp; macOS 14 or later</p>
+      <p class="cta-note">Free to join &nbsp;·&nbsp; iOS 17 or later &nbsp;·&nbsp; macOS 14 or later</p>
     </div>
 
     <div class="wrap">
@@ -424,44 +422,12 @@
   <!-- GET THE BETA -->
   <section class="section get-beta" id="get-beta" aria-labelledby="get-title">
     <div class="wrap"><div class="get-inner">
-      <h2 id="get-title">Try it on your own desk.</h2>
-      <p class="lead">Free while it's in beta. Install the iPhone app and the Mac app, open both on the same Wi‑Fi (or connect a cable), and you're shooting.</p>
+      <h2 id="get-title">Want it on your own desk?</h2>
+      <p class="lead">CamBridge is in private testing right now. Join the beta list and you'll be among the first to get the iPhone and Mac apps when the beta opens. Free, no account.</p>
       <div class="cta-row cta-row--center">
-        <a class="btn btn-primary" data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the iPhone beta</a>
-        <a class="btn btn-secondary" data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Join the Mac beta</a>
+        <a class="btn btn-primary" href="#updates"><svg class="btn-ico" aria-hidden="true"><use href="#i-phone"/></svg>Join the beta list</a>
       </div>
-      <p class="cta-note">TestFlight &nbsp;·&nbsp; iPhone: iOS 17 or later &nbsp;·&nbsp; Mac: macOS 14 or later, Apple silicon or Intel</p>
-    </div>
-    </div>
-  </section>
-
-  <!-- MAC DIRECT DOWNLOAD -->
-  <section class="section mac-download" id="mac-download" aria-labelledby="mac-dl-title">
-    <div class="wrap"><div class="get-inner">
-      <h2 id="mac-dl-title">Download CamBridge Studio for Mac</h2>
-      <p class="lead">Install the Mac app straight from here, no TestFlight needed. It's signed and notarized by Apple and updates itself from inside the app.</p>
-      <div class="cta-row cta-row--center">
-        <a class="btn btn-primary" href="https://github.com/mohsinsapra/cambridge/releases/latest/download/CamBridge-Studio.zip"><svg class="btn-ico" aria-hidden="true"><use href="#i-mac"/></svg>Download for Mac</a>
-      </div>
-      <p class="cta-note">macOS 14 or later &nbsp;·&nbsp; Apple silicon or Intel &nbsp;·&nbsp; free while in beta</p>
-
-      <div class="install-steps">
-        <h3>Install in one line</h3>
-        <p>Open <strong>Terminal</strong> (press <kbd>⌘</kbd> <kbd>Space</kbd>, type “Terminal”), paste this and press Return:</p>
-        <div class="install-cmd">
-          <code id="installCmd">curl -fsSL https://mohsin.se/cambridge/install.sh | sh</code>
-          <button class="copy-btn" type="button" data-copy="installCmd">Copy</button>
-        </div>
-        <p class="install-hint">It downloads the latest version, puts it in Applications and opens it.</p>
-
-        <h3>Or install it by hand</h3>
-        <ol>
-          <li>Click <strong>Download for Mac</strong> above.</li>
-          <li>Open the downloaded <strong>CamBridge-Studio.zip</strong> (usually in Downloads) to unzip it.</li>
-          <li>Drag <strong>CamBridge Studio</strong> into your <strong>Applications</strong> folder and open it.</li>
-        </ol>
-        <p class="install-hint">Have the TestFlight version installed? Move it to the Trash first. Updates arrive inside the app: <em>CamBridge Studio › Check for Updates…</em></p>
-      </div>
+      <p class="cta-note">iPhone: iOS 17 or later &nbsp;·&nbsp; Mac: macOS 14 or later, Apple silicon or Intel</p>
     </div>
     </div>
   </section>
@@ -470,8 +436,8 @@
   <section id="updates" class="section updates" aria-labelledby="upd-title">
     <div class="wrap updates-inner">
       <div class="section-head section-head--center">
-        <h2 id="upd-title">Get CamBridge updates.</h2>
-        <p class="lead">Join the list to hear when the production App Store version launches, or skip the wait and jump into the beta today.</p>
+        <h2 id="upd-title">Join the beta list.</h2>
+        <p class="lead">CamBridge isn't out yet. Just your email. We'll tell you when the beta opens, and again when it launches on the App Store.</p>
       </div>
 
       <div class="form-card">
@@ -481,48 +447,11 @@
           <input type="email" id="signupEmail" name="email" required autocomplete="email" placeholder="you@example.com">
         </div>
 
-        <fieldset class="pill-group">
-          <legend>I'm interested in</legend>
-          <label class="pill">
-            <input type="radio" name="channel" value="beta">
-            <span>Early access</span>
-          </label>
-          <label class="pill">
-            <input type="radio" name="channel" value="production">
-            <span>Production launch</span>
-          </label>
-          <label class="pill">
-            <input type="radio" name="channel" value="both" checked>
-            <span>Both</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="pill-group">
-          <legend>I'd use it on</legend>
-          <label class="pill">
-            <input type="radio" name="platform" value="both" checked>
-            <span>iPhone + Mac</span>
-          </label>
-          <label class="pill">
-            <input type="radio" name="platform" value="iphone">
-            <span>iPhone</span>
-          </label>
-          <label class="pill">
-            <input type="radio" name="platform" value="mac">
-            <span>Mac</span>
-          </label>
-        </fieldset>
-
-        <div class="signup-field">
-          <label class="sr-only" for="signupUseCase">What would you use CamBridge for? (optional)</label>
-          <textarea id="signupUseCase" name="use_case" rows="2" maxlength="1000" placeholder="What would you use CamBridge for? (optional)"></textarea>
-        </div>
-
         <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <div class="cf-turnstile" data-sitekey="0x4AAAAAAFLGJZiXsQw1Xaia" data-action="turnstile-spin-v1" data-theme="auto"></div>
 
-        <button type="submit" class="btn btn-primary" id="signupSubmit">Join the list</button>
+        <button type="submit" class="btn btn-primary" id="signupSubmit">Join the beta list</button>
         <p class="signup-status" id="signupStatus" role="status" aria-live="polite"></p>
       </form>
       </div>
@@ -534,7 +463,7 @@
     <div class="wrap">
       <ul class="trust-row">
         <li>Alpha Tjänster AB — Sweden</li>
-        <li>Distributed via Apple's TestFlight — Apple-reviewed builds</li>
+        <li>Beta via Apple's TestFlight — Apple-reviewed builds</li>
         <li>No accounts, no tracking</li>
         <li>Built by a creator, for creators</li>
       </ul>
@@ -565,7 +494,7 @@
       <a href="#updates">Updates</a>
       <a href="privacy.html">Privacy</a>
     </nav>
-    <p class="footer-copy">CamBridge Camera + CamBridge Studio. Join the beta: <a data-beta="ios" href="https://testflight.apple.com/join/Qc7sRP4t">iPhone</a> · <a data-beta="mac" href="https://testflight.apple.com/join/65SqwXFX">Mac</a></p>
+    <p class="footer-copy">CamBridge Camera + CamBridge Studio. Not out yet: <a href="#updates">join the beta list</a></p>
   </div>
 </footer>
 
